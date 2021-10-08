@@ -21,6 +21,14 @@ class MainActivity : AppCompatActivity() {
             title="Stepaw"
         }
     }
+//Will be called before activity is stopped
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+    }
+//Called after onstart()
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+    }
 
 //Will be later updated to use Jetpack Navigation and frgaments.
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
